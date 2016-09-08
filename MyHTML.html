@@ -11,9 +11,33 @@
             alert("I'm doing something!");
         }
 
+        function doSomethingCooler() {
+            var el = document.getElementById("container");
+            var height = el.offsetHeight;
+            
+            if (height > 500) {
+                el.style.background = getRandomColor();
+            } else {
+                var newHeight = height + 50;
+                el.style.height = newHeight + 'px';
+            }
+        }
+
+        function getRandomColor() {
+            var letters = '0123456789ABCDEF';
+            var color = '#';
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+    </script>
 </head>
 <body>
     <h1>Energh's Buttons</h1>
     <button onclick="doSomething()">This is a button!</button>
+    <div class="energh-padding">
+        <button id="container" class="energh-button" onclick="doSomethingCooler()">I do something cooler</button>
+    </div>
 </body>
 </html>
