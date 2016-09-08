@@ -1,4 +1,22 @@
-﻿h1
+﻿body 
+{
+    padding: 20px;
+}
+
+h1
 {
     color: blue;
+}
+
+.energh-link
+{
+    color: #00a3d3;
+
+}
+
+.energh-link:hover
+{
+    color: darkred;
+    transition: color linear 1s;
+}
 }
