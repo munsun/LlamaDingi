@@ -20,7 +20,17 @@ h1
     transition: color linear 1s;
 }
 
+.energh-padding
+{
+    margin-top: 20px;
+}
+
 .energh-image
 {
     width: 470px;
+}
+
+.energh-button 
+{
+    width: 300px;
 }
